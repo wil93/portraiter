@@ -1,4 +1,5 @@
 #!/usr/bin/env python2
+# -*- coding: utf-8 -*-
 
 """Portraiter.
 
@@ -16,7 +17,7 @@ import sys
 import cv2
 from docopt import docopt
 
-def main(argv):
+def main():
     args = docopt(__doc__, version='Portraiter 0.1')
 
     if args["--webcam"]:
@@ -62,6 +63,3 @@ def main(argv):
 
     crop_img = imcolor[ty:by, tx:bx]
     cv2.imwrite(args["<output_file>"], crop_img)
-
-if __name__ == '__main__':
-    main(sys.argv)
