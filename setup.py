@@ -8,6 +8,7 @@ setup(
     version="0.1",
     author="William Di Luigi",
     author_email="williamdiluigi@gmail.com",
+    description='Simple program that takes a picture and "extracts" faces, as rectangular portraits.',
     url="https://github.com/wil93/portraiter",
     packages=find_packages(),
     entry_points={
